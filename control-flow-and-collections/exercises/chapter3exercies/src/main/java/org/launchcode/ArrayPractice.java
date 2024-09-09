@@ -17,5 +17,7 @@ public class ArrayPractice {
         String[] words = phrase.split("\\. ");
         System.out.println(Arrays.toString(words));
 
+
+
     }
 }
