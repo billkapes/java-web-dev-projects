@@ -45,5 +45,8 @@ public class MenuItem {
         isNew = aNew;
     }
 
+    public  boolean equals(MenuItem itemToCompare) {
+        return this.description.equals(itemToCompare.description);
+    }
 
 }
