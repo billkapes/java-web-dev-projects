@@ -5,6 +5,8 @@ import java.util.HashMap;
 public class Main {
     public static void main(String[] args) {
         // Test out your Divide() function!
+        System.out.println(Divide(6,0));
+
 
         HashMap<String, String> studentFiles = new HashMap<>();
         studentFiles.put("Carl", "Program.java");
@@ -15,13 +17,21 @@ public class Main {
         // Test out your CheckFileExtension() function!
     }
 
-    public static void Divide(int x, int y)
+    public static int Divide(int x, int y)
     {
-        // Write code here!
+        if (y == 0) {
+            try {
+                throw new ArithmeticException("Cannot divide by zero.");
+            } catch (ArithmeticException e) {
+                e.printStackTrace();
+                return 0;
+            }
+        }
+        return x / y;
     }
 
     public static int CheckFileExtension(String fileName)
     {
-        // Write code here!
+        return 0;
     }
 }
