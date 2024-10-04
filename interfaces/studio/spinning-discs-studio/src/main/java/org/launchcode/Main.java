@@ -8,6 +8,7 @@ public class Main {
         DVD dvd1 = new DVD("some dvd data");
 
         // TODO: Call each CD and DVD method to verify that they work as expected.
+
         cd1.spin();
         dvd1.spin();
         cd1.throwDisc();
